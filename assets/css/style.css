@@ -4,6 +4,7 @@
 
 :root {
   --back-ground-color: #ffb900;
+  --font-family: Sen;
 }
 html {
   font-size: 62.5%;
@@ -14,6 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
 /* =================common================== */
 a {
   text-decoration: none;
@@ -47,6 +49,27 @@ a {
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.desc-small {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.85;
 }
 
 /* =================header================== */
@@ -176,7 +199,7 @@ a {
 
 .content-block .heading {
   color: #171100;
-  font-family: Sen;
+  font-family: var(--font-family);
   font-size: 5.8rem;
   font-weight: 700;
   line-height: 117%;
@@ -239,7 +262,7 @@ button.watch-video {
 .hero .stats strong {
   margin-right: 15px;
   color: #171100;
-  font-family: Sen;
+  font-family: var(--font-family);
   font-size: 4.4rem;
   font-weight: 700;
   line-height: 1.23;
@@ -263,7 +286,7 @@ button.watch-video {
 
 .popular-top h2.heading {
   color: #171100;
-  font-family: Sen;
+  font-family: var(--font-family);
   font-size: 3.8rem;
   font-weight: 700;
   line-height: 1.26;
@@ -341,4 +364,73 @@ button.watch-video {
 
 .popular-card-price .btn-book:hover {
   background-color: var(--back-ground-color);
+}
+
+/* =================Feedback================== */
+
+.feedback {
+  background-color: #2e2100;
+  margin-bottom: 200px;
+}
+
+.feedback .body {
+  padding: 96px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-left {
+  width: 34%;
+}
+
+.feedback-right {
+  width: 66%;
+}
+
+.feedback-left .img-Peter {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.title-Peter {
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.41;
+  margin-top: 18px;
+}
+.desc-Perter {
+  color: #bfbcb2;
+  margin-top: 4px;
+}
+
+.feedback-left .dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.feedback-left .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+
+.feedback-left .dot.active {
+  background: var(--back-ground-color);
+  cursor: default;
+}
+
+.desc-feedback {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.53;
+  padding-left: 30px;
 }
