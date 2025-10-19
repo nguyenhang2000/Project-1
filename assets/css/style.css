@@ -370,7 +370,7 @@ button.watch-video {
 
 .feedback {
   background-color: #2e2100;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .feedback .body {
@@ -378,6 +378,13 @@ button.watch-video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+}
+
+.feedback-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .feedback-left {
@@ -433,4 +440,63 @@ button.watch-video {
   font-style: italic;
   line-height: 1.53;
   padding-left: 30px;
+}
+
+/* =================.feature================== */
+.feature .body {
+  display: flex;
+  padding: 100px 0px;
+  justify-content: space-between;
+}
+
+.feature-left {
+  display: flex;
+  gap: 30px;
+  width: 48%;
+}
+
+.feature-right {
+  width: 52%;
+  padding-left: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-left .people-left {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 34px;
+}
+
+.feature-left .people-right {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.feature-right h2.heading {
+  color: #171100;
+  font-family: var(--font-family);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.feature-right p.text {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+.feature-right .btn-small {
+  width: 137px;
+  height: 50px;
+  background: var(--back-ground-color);
+  margin-top: 32px;
 }
