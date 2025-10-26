@@ -613,3 +613,88 @@ p.text {
   justify-content: center;
   margin-top: 38px;
 }
+/* =================footer================== */
+
+footer {
+  background: #2e2100;
+}
+
+footer .body {
+  padding: 96px 0 28px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info .lesson {
+  width: 23%;
+}
+
+.footer-info .company {
+  width: 11%;
+}
+
+.footer-info .support {
+  width: 12%;
+}
+
+.footer-info .address {
+  width: 20%;
+}
+
+footer p.desc {
+  color: #bfbcb2;
+  line-height: 1.85;
+  font-size: 1.4rem;
+  margin-top: 18px;
+}
+
+footer .icon {
+  margin-top: 18px;
+  width: 111px;
+  height: 15px;
+}
+
+footer .title {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  position: relative;
+}
+
+footer .title::after {
+  content: "";
+  display: inline-block;
+  background: #59554b;
+  width: 130px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+}
+
+footer p.desc.desc-top {
+  margin-top: 43px;
+}
+
+footer p.desc span {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #59554b;
+  margin-top: 38px;
+}
+
+footer p.desc-last {
+  text-align: center;
+  margin-top: 28px;
+}
